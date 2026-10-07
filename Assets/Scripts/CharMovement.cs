@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
@@ -7,31 +5,39 @@ using UnityEngine.InputSystem;
 public class CharMovement : MonoBehaviour
 {
     private NavMeshAgent agent;
+    private GameObject player;
 
-    [Header("Movement Seetings")]
+    [Header("Movement Settings")]
     public float moveSpeed = 10f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
         agent.speed = moveSpeed;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        // Check if the left mouse button was pressed this frame
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            // Get the mouse position on the screen
+            Vector2 mousePosition = Mouse.current.position.ReadValue();
 
+            // Create a ray from the camera through the mouse position
+            Ray ray = Camera.main.ScreenPointToRay(mousePosition);
+
+            // Check if the ray hits something
             if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                agent.Move(hit.point);
+                // Tell the NavMeshAgent to move to the hit position
+                agent.SetDestination(hit.point);
+                Debug.Log("Player has moved to: " + player.transform.position.x + ", " + player.transform.position.y + ", " + player.transform.position.z);
             }
             else
             {
-                Debug.Log("Player is unable to move to this position");
+                Debug.Log("Player is unable to move to this position.");
             }
         }
     }
