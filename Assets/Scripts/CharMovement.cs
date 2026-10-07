@@ -6,9 +6,11 @@ public class CharMovement : MonoBehaviour
 {
     private NavMeshAgent agent;
     private GameObject player;
+    private Vector3 turnStartPos;
 
     [Header("Movement Settings")]
     public float moveSpeed = 10f;
+    public float maxDistance = 5f;
 
     private void Start()
     {
@@ -16,6 +18,12 @@ public class CharMovement : MonoBehaviour
         agent.speed = moveSpeed;
         player = GameObject.FindGameObjectWithTag("Player");
     }
+
+    private void CanMoveTo(Vector3 Destination)
+    {
+        float distance = Vector3.Distance(turnStartPos, Destination);
+    }
+
 
     private void Update()
     {
