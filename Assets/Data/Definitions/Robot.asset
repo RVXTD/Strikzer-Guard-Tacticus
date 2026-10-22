@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae1b2f826e941879c717d0dac2e6e7, type: 3}
+  m_Name: Robot
+  m_EditorClassIdentifier: Game.Presentation::Game.Presentation.UnitDefinition
+  displayName: Unit
+  maxHealth: 10
+  accuracy: 70
+  movementBudget: 6
+  actionPoints: 2
+  initiative: 0
+  weapon: {fileID: 11400000, guid: eba309760c953448f81a1be0b6fec778, type: 2}
+  startingAmmo: 30
+  zone:
+    Radius: 0
+    HalfAngleDegrees: 0
+    RequiresLineOfSight: 0
+  abilities: []

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae1b2f826e941879c717d0dac2e6e7, type: 3}
+  m_Name: Sentry
+  m_EditorClassIdentifier: Game.Presentation::Game.Presentation.UnitDefinition
+  displayName: Sentry
+  maxHealth: 12
+  accuracy: 70
+  movementBudget: 0
+  actionPoints: 2
+  initiative: 6
+  weapon: {fileID: 11400000, guid: 26acb44acb41545feb218748e1708482, type: 2}
+  startingAmmo: 60
+  zone:
+    Radius: 10
+    HalfAngleDegrees: 45
+    RequiresLineOfSight: 1
+  abilities:
+  - {fileID: 11400000, guid: c89925beec5be4ea0960a51ca8f96d4d, type: 2}
+  bodyRadius: 0.5
+  ai:
+    Aggression: 1
+    Caution: 0
+    Approach: 0
+    RetreatWhenHurt: 0
+    AmmoGreed: 0
+    ZoneAvoidance: 0

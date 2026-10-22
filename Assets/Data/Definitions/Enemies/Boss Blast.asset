@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fdfaff9722364203b78bed564c5200c, type: 3}
+  m_Name: Boss Blast
+  m_EditorClassIdentifier: Game.Presentation::Game.Presentation.AbilityAsset
+  definition:
+    ActionPointCost: 1
+    EndsTurn: 1
+    IsReaction: 0
+    Targeting: 2
+    TargetTeam: 0
+    Range: 10
+    Radius: 2.5
+    RequiresLineOfSight: 1
+    Effects:
+    - Kind: 1
+      Amount: 4
+      Status: 0
+      Magnitude: 0
+      Turns: 0
+      Zone:
+        Radius: 0
+        HalfAngleDegrees: 0
+        RequiresLineOfSight: 0

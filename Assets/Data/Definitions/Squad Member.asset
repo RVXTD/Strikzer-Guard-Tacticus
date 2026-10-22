@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae1b2f826e941879c717d0dac2e6e7, type: 3}
+  m_Name: Squad Member
+  m_EditorClassIdentifier: Game.Presentation::Game.Presentation.UnitDefinition
+  displayName: Unit
+  maxHealth: 10
+  accuracy: 70
+  movementBudget: 6
+  actionPoints: 2
+  initiative: 20
+  weapon: {fileID: 11400000, guid: eba309760c953448f81a1be0b6fec778, type: 2}
+  startingAmmo: 30
+  zone:
+    Radius: 2
+    HalfAngleDegrees: 180
+    RequiresLineOfSight: 0
+  abilities:
+  - {fileID: 11400000, guid: 71f8f314280124298a4bcca14b79f1f3, type: 2}
+  bodyRadius: 0.35
+  ai:
+    Aggression: 1
+    Caution: 1
+    Approach: 0.3
+    RetreatWhenHurt: 1
+    AmmoGreed: 1
+    ZoneAvoidance: 1

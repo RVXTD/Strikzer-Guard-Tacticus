@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdbeb1ec3d8ae4d889f28be769cd82c4, type: 3}
+  m_Name: EncounterTuning
+  m_EditorClassIdentifier: Game.Presentation::Game.Presentation.EncounterTuning
+  hitChance:
+    HalfCoverPenalty: 20
+    FullCoverPenalty: 40
+    PenaltyPerMetreBeyondOptimal: 3
+    AttackerInHostileZonePenalty: 15
+    Minimum: 5
+    Maximum: 95
+  ammoFate:
+    HitEmbedPercent: 60
+    HitScatterPercent: 25
+    GlanceDamagePercent: 50
+    MissScatterPercent: 70
+    GlanceScatterRadius: 1
+    MissScatterMinDistance: 1
+    MissScatterMaxDistance: 4
+    MissScatterSpread: 1
+  pickupRadius: 1.5
+  pileMergeRadius: 1
+  seed: 1

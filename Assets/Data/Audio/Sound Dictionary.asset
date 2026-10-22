@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579c8c8087efe4f87baa2817acb75dff, type: 3}
+  m_Name: Sound Dictionary
+  m_EditorClassIdentifier: Game.Presentation::Game.Presentation.SoundDictionary
+  entries:
+  - Kind: 7
+    Clips: []
+    Volume: 0.8
+    PitchVariance: 0.1
+    Positional: 1
+  - Kind: 8
+    Clips: []
+    Volume: 0.7
+    PitchVariance: 0.1
+    Positional: 1
+  - Kind: 11
+    Clips: []
+    Volume: 0.9
+    PitchVariance: 0.05
+    Positional: 1
+  - Kind: 10
+    Clips: []
+    Volume: 0.8
+    PitchVariance: 0
+    Positional: 1
+  - Kind: 9
+    Clips: []
+    Volume: 0.9
+    PitchVariance: 0.05
+    Positional: 1
+  - Kind: 12
+    Clips: []
+    Volume: 0.7
+    PitchVariance: 0
+    Positional: 1
+  - Kind: 13
+    Clips: []
+    Volume: 0.6
+    PitchVariance: 0.05
+    Positional: 1
+  - Kind: 14
+    Clips: []
+    Volume: 0.5
+    PitchVariance: 0
+    Positional: 1
+  - Kind: 5
+    Clips: []
+    Volume: 0.7
+    PitchVariance: 0
+    Positional: 0
+  - Kind: 22
+    Clips: []
+    Volume: 0.5
+    PitchVariance: 0.05
+    Positional: 1
+  - Kind: 20
+    Clips: []
+    Volume: 0.6
+    PitchVariance: 0.05
+    Positional: 1
+  - Kind: 21
+    Clips: []
+    Volume: 0.6
+    PitchVariance: 0.05
+    Positional: 1
+  - Kind: 17
+    Clips: []
+    Volume: 0.25
+    PitchVariance: 0.2
+    Positional: 1
+  - Kind: 1
+    Clips: []
+    Volume: 0.35
+    PitchVariance: 0
+    Positional: 0
+  calmLoop: {fileID: 8300000, guid: 54812017fb82e4eca9c6fc6e02654a93, type: 3}
+  combatLoop: {fileID: 8300000, guid: b92710a9109af4394a1585382b3ae76a, type: 3}
+  winStinger: {fileID: 8300000, guid: a56dffa311f324dc99514cad9f208502, type: 3}
+  loseStinger: {fileID: 8300000, guid: 596e93c0b786948f9b3fb5d3f9dc55f9, type: 3}
+  musicVolume: 0.6
+  crossfadeSeconds: 2
+  intensityPerEvent: 0.15
+  intensityHalfLife: 8
