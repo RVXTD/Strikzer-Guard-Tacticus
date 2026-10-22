@@ -84,6 +84,10 @@ private void Update()
 
     if (movement != null)
         movement.enabled = true;
+    else if (movement = null)
+        {
+            Debug.Log("Player cannot move, it isn't their turn");
+        }
 }
 
 
