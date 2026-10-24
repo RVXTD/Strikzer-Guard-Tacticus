@@ -1,0 +1,6 @@
+{
+    "name": "HealthUI",
+    "rootNamespace": "",
+    "references": ["Health"],
+    "autoReferenced": true
+}

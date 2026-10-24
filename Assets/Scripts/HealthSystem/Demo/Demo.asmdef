@@ -1,0 +1,6 @@
+{
+    "name": "Demo",
+    "rootNamespace": "",
+    "references": ["Health"],
+    "autoReferenced": true
+}
