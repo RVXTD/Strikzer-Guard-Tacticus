@@ -1,0 +1,6 @@
+{
+    "name": "Combat",
+    "rootNamespace": "",
+    "references": ["Health"],
+    "autoReferenced": true
+}
